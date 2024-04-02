@@ -44,7 +44,9 @@ const authToken = 'cb116472599a3b2fc2563cd5258a205d';
 const twilioClient = twilio(accountSid, authToken);
 
 
-
+app.get('/',(req,res)=>{
+  res.json({message:"hello"})
+})
 
 // --------------------------------------------------------------------------------
 // send otp and resend otp
